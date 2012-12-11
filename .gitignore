@@ -1,0 +1,9 @@
+*.sw?
+.ropeproject
+testdb
+static.json
+*.py[cod]
+*.egg-info/*
+tests/htdocs
+tests/manage.py
+
