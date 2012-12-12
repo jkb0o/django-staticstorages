@@ -84,15 +84,17 @@ Any string variable with patternt similar to
 There ia an example:
 ```javascript
 
-// it will be replaced with "/static/img/smile.png"
+// it will be replaced with "/static/img/smile.afaf1024.png"
 var image_src = 'url("../img/smile.png")'
 ```
 
 Customization
 -------------
 
+<totally incomplete docs>
+
 It is simple to customize the behaviour of staticstorages.
-The best way to understend how to do it is to read
+The best way to understand how to do this, is to read
 the source code.
 
 You can totally redefine the behaviour of staticstorages by
@@ -107,4 +109,5 @@ Difference from djago storage
 
 Django's CachedFilesStorage do not process JS, and there is no way
 to extend it with another processors (plovr configs for example).
-It is also fixes some bugs with CachedFilesStorage.
+It is also has some bugs with CachedFilesStorage, which statocstorages
+fixes.
