@@ -61,7 +61,9 @@ class BaseProcessor(object):
 class JsProcessor(BaseProcessor):
     filepattern = '*.js'
     pattern = re.compile(getattr(settings, 'STATIC_JSPROCESSOR_TEMPLATE',
-        r"STATIC.url\(\s*(?P<d>['\"])(?P<content>.*?)(?P=d)\s*\)"))
+        r"""(?P<d1>['"])url\(\s*(?P<d>['\"])(?P<content>.*?)(?P=d)\s*\)(?p=d1)"""))
+        # it is needed for my project^
+        # r"STATIC.url\(\s*(?P<d>['\"])(?P<content>.*?)(?P=d)\s*\)"))
 
     def __init__(self, backend):
         self.backend = backend
