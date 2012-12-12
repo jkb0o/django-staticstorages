@@ -62,7 +62,7 @@ There is an example of css declaration
 ```css
 /* file $DJANGO_PROJECT/css/defaults/main.css */
 body { 
-    /* replaces with ... url("/static/img/bg.fh0101ab.jpg")
+    /* replaces with ... url("/static/img/bg.fh0101ab.jpg") */
     background: transparent url('../..//img/bg.jpg'); 
 
     /* 
